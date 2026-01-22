@@ -5,6 +5,7 @@ import EnemyIcon from "./icons/EnemyIcon";
 import GateIcon from "./icons/GateIcon";
 import NpcIcon from "./icons/NpcIcon";
 import PlayerIcon from "./icons/PlayerIcon";
+import PlayerIconWithSword from "./icons/PlayerIconWithSword";
 import TreasureIcon from "./icons/TreasureIcon";
 import WeaponIcon from "./icons/WeaponIcon";
 
@@ -39,7 +40,7 @@ const Grid = ({ mapId, playerPos, hasWeapon, enemyDefeated }: Props) => {
 
   const renderEntity = (x: number, y: number) => {
     if (playerPos.x === x && playerPos.y === y) {
-      return <PlayerIcon />;
+      return hasWeapon ? <PlayerIconWithSword /> : <PlayerIcon />;
     }
     if (map.weapon && !hasWeapon && map.weapon.x === x && map.weapon.y === y) {
       return <WeaponIcon />;
