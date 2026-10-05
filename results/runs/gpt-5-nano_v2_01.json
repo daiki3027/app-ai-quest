@@ -1,0 +1,1436 @@
+{
+ "model": "gpt-5-nano",
+ "prompt": "v2",
+ "episode": 1,
+ "cleared": false,
+ "stopReason": "max_actions",
+ "calls": 13,
+ "failedCalls": 0,
+ "actions": 120,
+ "optimalActions": 50,
+ "blocked": 17,
+ "noEffect": 18,
+ "firstBadIndex": [
+  null,
+  6,
+  null,
+  4,
+  1,
+  1,
+  2,
+  6,
+  6,
+  9,
+  5,
+  2,
+  3
+ ],
+ "milestones": {
+  "weapon": true,
+  "enemy": false,
+  "fieldB": false
+ },
+ "costUsd": 0.038526,
+ "inputTokens": 8634,
+ "outputTokens": 95233,
+ "latencyMs": [
+  71450,
+  36807,
+  69666,
+  60244,
+  52541,
+  29763,
+  47603,
+  47744,
+  33929,
+  52116,
+  47411,
+  54214,
+  66578
+ ],
+ "steps": [
+  {
+   "call": 1,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ1マス移動して近くのNPCへ接近",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "北へ1マス移動してBの位置へ接近",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "北へ1マス移動してBと間近に",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 3,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "Bと会話する",
+   "outcome": "talk",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "北へ1マス移動して宝箱方面へ進む",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ移動して扉と距離を詰める",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 6,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ移動して扉の近くまで進む",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ移動して扉の隣まで進む",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ移動して扉の隣まで接近",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "門を開ける",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 2,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ1マス進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 2,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ1マス進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 2,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ1マス進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 2,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ1マス進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 2,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ1マス進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 2,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "上へ1マス進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 2,
+   "index": 6,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "武器を拾う",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 2,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ1マス進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 2,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ1マス進む",
+   "outcome": "blocked",
+   "map": "house"
+  },
+  {
+   "call": 2,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を開ける",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左へ1マス移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左へ1マス移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左へ1マス移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左へ1マス移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左へ1マス移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左へ1マス移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 6,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 1
+   },
+   "reason": "下へ1マス移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 7,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "隣接するドアを調べる",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 3,
+   "index": 8,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱のありかを調べる",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を探る",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 4,
+   "index": 0,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "右の家のドアを調べる",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 4,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "ドアを抜けて家の入口へ",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 4,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "家の中を北へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 4,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "更に北へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 4,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "更に北へ進む",
+   "outcome": "blocked",
+   "map": "house"
+  },
+  {
+   "call": 4,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 0
+   },
+   "reason": "北西へ進み、宝箱のある部屋を探す",
+   "outcome": "blocked",
+   "map": "house"
+  },
+  {
+   "call": 5,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左へ移動して村へ戻るドアへ近づく",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 5,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "さらに左へ進みドアの横に寄る",
+   "outcome": "blocked",
+   "map": "house"
+  },
+  {
+   "call": 5,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 1
+   },
+   "reason": "下へ移動してドアの手前に着く",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 5,
+   "index": 3,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "村へ戻るドアを調べる",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 5,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "村へ戻るドアを抜けて村へ",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 5,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "村の中で宝箱へ向かう道を探す",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 5,
+   "index": 6,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "上へ進んで宝箱の位置を探す",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 5,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "さらに上へ進む",
+   "outcome": "blocked",
+   "map": "house"
+  },
+  {
+   "call": 5,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左へ移動して宝箱の近くへ",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 5,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を開ける",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 6,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左へ移動して村へ戻るドアの手前まで近づく",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 6,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "さらに左へ進んでドアの位置へ接近",
+   "outcome": "blocked",
+   "map": "house"
+  },
+  {
+   "call": 6,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 1
+   },
+   "reason": "ドアの北側、隣接マスへ移動して開けやすくする",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 6,
+   "index": 3,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "村へ戻るドアを調べて開ける",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 7,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 1
+   },
+   "reason": "下へ移動して村へ戻るドアへ接近",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 7,
+   "index": 1,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "村へ戻るドアを調べる",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 7,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右に1マス移動して宝箱の方へ進む",
+   "outcome": "blocked",
+   "map": "village"
+  },
+  {
+   "call": 7,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ移動",
+   "outcome": "blocked",
+   "map": "village"
+  },
+  {
+   "call": 7,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ移動して宝箱の手前へ",
+   "outcome": "blocked",
+   "map": "village"
+  },
+  {
+   "call": 7,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ移動して宝箱の手前へ",
+   "outcome": "blocked",
+   "map": "village"
+  },
+  {
+   "call": 7,
+   "index": 6,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ移動して宝箱の手前へ",
+   "outcome": "blocked",
+   "map": "village"
+  },
+  {
+   "call": 7,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ移動して宝箱の手前へ",
+   "outcome": "blocked",
+   "map": "village"
+  },
+  {
+   "call": 7,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ移動して宝箱の手前へ",
+   "outcome": "blocked",
+   "map": "village"
+  },
+  {
+   "call": 7,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を開ける",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 8,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 8,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 8,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 8,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 8,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 8,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 8,
+   "index": 6,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を調べる",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 8,
+   "index": 7,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を開ける",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 8,
+   "index": 8,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱の中身を確認",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 8,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を確定完了",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 9,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左（西）へ移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 9,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左（西）へ移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 9,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左（西）へ移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 9,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左（西）へ移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 9,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左（西）へ移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 9,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左（西）へ移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 9,
+   "index": 6,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左（西）へ移動",
+   "outcome": "blocked",
+   "map": "house"
+  },
+  {
+   "call": 9,
+   "index": 7,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "村へのドアを調べて抜ける",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 9,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 0
+   },
+   "reason": "状況を確認するため待機",
+   "outcome": "blocked",
+   "map": "village"
+  },
+  {
+   "call": 9,
+   "index": 9,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 0
+   },
+   "reason": "状況を確認するため待機",
+   "outcome": "blocked",
+   "map": "village"
+  },
+  {
+   "call": 10,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左へ移動してCの近くへ近づく",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 10,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "さらに左へ移動",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 10,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "Cの正面へ接近する",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 10,
+   "index": 3,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "隣接するNPC Cに話しかける",
+   "outcome": "talk",
+   "map": "village"
+  },
+  {
+   "call": 10,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ戻って扉へ近づく",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 10,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "更に右へ移動",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 10,
+   "index": 6,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "扉の前まで進む",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 10,
+   "index": 7,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "家のドアを開ける",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 10,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "扉の内側へ移動して宝箱へ接近",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 10,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を開ける",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 11,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ1マス進み、宝箱候補の場所へ接近",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 11,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ1マス進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 11,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "宝箱候補の列の中間まで近づく",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 11,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "宝箱の隣接セルに近づくため右へ移動",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 11,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "宝箱がある可能性のあるセルへ最終接近",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 11,
+   "index": 5,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "隣接する宝箱を調べる",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 11,
+   "index": 6,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を開ける",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 11,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "宝箱を開けた後、元の場所へ戻る",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 11,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "周囲を確認し安全を確保",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 11,
+   "index": 9,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "探索完了後、次の行動へ備える",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 12,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ進み宝箱の方向を探る",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 12,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "更に右へ進み宝箱の手掛かりを得る",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 12,
+   "index": 2,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "隣接する宝箱を調べる",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 12,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "上へ移動して宝箱の位置を確かめる",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 12,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "更に上へ進み宝箱の奥を探る",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 12,
+   "index": 5,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "周囲を調べて宝箱の位置を特定する",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 12,
+   "index": 6,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左へ移動して宝箱へ接近",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 12,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "さらに左へ接近して宝箱の隣接位置を取る",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 12,
+   "index": 8,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を開く準備を整える",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 12,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を開けてクリアする",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 13,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右（東）へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 13,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右（東）へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 13,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右（東）へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 13,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右（東）へ進む",
+   "outcome": "blocked",
+   "map": "house"
+  },
+  {
+   "call": 13,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 1
+   },
+   "reason": "下（南）へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 13,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 1
+   },
+   "reason": "下（南）へ進む",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 13,
+   "index": 6,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を探す/調べる",
+   "outcome": "no_effect",
+   "map": "house"
+  },
+  {
+   "call": 13,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "西（左）へ戻る",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 13,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "西（左）へ戻る",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 13,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を開ける",
+   "outcome": "no_effect",
+   "map": "house"
+  }
+ ],
+ "errors": []
+}

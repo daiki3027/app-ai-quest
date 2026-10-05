@@ -1,0 +1,918 @@
+{
+ "model": "gpt-5-mini",
+ "prompt": "v2",
+ "episode": 1,
+ "cleared": true,
+ "stopReason": "cleared",
+ "calls": 8,
+ "failedCalls": 0,
+ "actions": 76,
+ "optimalActions": 50,
+ "blocked": 2,
+ "noEffect": 3,
+ "firstBadIndex": [
+  null,
+  null,
+  null,
+  8,
+  7,
+  4,
+  null,
+  null
+ ],
+ "milestones": {
+  "weapon": true,
+  "enemy": true,
+  "fieldB": true
+ },
+ "costUsd": 0.029452,
+ "inputTokens": 5461,
+ "outputTokens": 14043,
+ "latencyMs": [
+  22746,
+  19716,
+  16102,
+  20494,
+  17288,
+  15444,
+  16115,
+  20133
+ ],
+ "steps": [
+  {
+   "call": 1,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "NPC B（7,6）に話しかけるために上へ移動",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 1,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "上のマスのNPC Bに話しかける",
+   "outcome": "talk",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "NPC A（5,6）に近づくため左へ移動",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "さらに左へ移動してAに隣接する位置へ",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 4,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "上のマスのNPC Aに話しかける",
+   "outcome": "talk",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "NPC Cに向かうため右へ移動開始",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 6,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ移動",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ移動してCに近づく",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ移動してCに隣接する位置へ",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 1,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "上のマスのNPC Cに話しかける",
+   "outcome": "talk",
+   "map": "village"
+  },
+  {
+   "call": 2,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ進む（家へ向かう）",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 2,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ進む（家へ向かう）",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 2,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ進む（家へ向かう）",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 2,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "上へ進む（家へ向かう）",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 2,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "上へ進む（家のドアの隣へ）",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 2,
+   "index": 5,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "家のドアを調べる（玄関に入る）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 2,
+   "index": 6,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "家の中を探して武器を見つける",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 2,
+   "index": 7,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "武器を取得する",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 2,
+   "index": 8,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "取得した武器を確認する／装備の準備をする",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 2,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "周囲を確認して次の目的地（門）へ向かう準備をする",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ進み、武器へ向かう（x2,y3）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ（x3,y3）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ（x4,y3）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ（x5,y3）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "上に移動して武器の隣へ（x5,y2）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 5,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "隣の武器を調べて取得する",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 6,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "武器取得後、その位置へ移動（アイテム消失後に通れる想定）（x6,y2）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ探索（x7,y2）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 1
+   },
+   "reason": "下へ移動して周辺を確認（x7,y3）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 3,
+   "index": 9,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "左へ戻りつつ通路や敵の場所を探索（x6,y3）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 4,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "西へ移動して村へ戻るドアへ接近する",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 4,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "さらに西へ移動（ドアに近づく）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 4,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "さらに西へ移動（ドアの隣へ）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 4,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "さらに西へ移動（ドア隣の位置まで移動）",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 4,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "村へ戻るドアの隣の位置に到達する",
+   "outcome": "progress",
+   "map": "house"
+  },
+  {
+   "call": 4,
+   "index": 5,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "村へ戻るドアを調べて村に戻る",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 4,
+   "index": 6,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "村で敵や狙いを探して西へ進む",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 4,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "さらに西へ進み敵を捜索する（武器で対処する準備）",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 4,
+   "index": 8,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "周囲を調べて敵/宝箱/門を確認する",
+   "outcome": "no_effect",
+   "map": "village"
+  },
+  {
+   "call": 4,
+   "index": 9,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "北へ移動して探索を続ける（敵や宝箱の位置を探る）",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 5,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "外へ続く門(7,0)へ向かうため左へ移動",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 5,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "門へ向かうためさらに左へ移動",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 5,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": -1,
+    "dy": 0
+   },
+   "reason": "門の真下の列へ移動",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 5,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "門に近づくため上へ移動",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 5,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "門に隣接する位置へ上へ移動",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 5,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "門の下(7,1)に到達して隣接する",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 5,
+   "index": 6,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "外へ続く門を調べて通行する／移動する",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 5,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 0
+   },
+   "reason": "門を通った後の様子を待機して確認",
+   "outcome": "blocked",
+   "map": "fieldA"
+  },
+  {
+   "call": 5,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 0
+   },
+   "reason": "状況に応じて次の行動を準備",
+   "outcome": "blocked",
+   "map": "fieldA"
+  },
+  {
+   "call": 5,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "周囲を調べて敵や宝箱の有無を確認",
+   "outcome": "progress",
+   "map": "village"
+  },
+  {
+   "call": 6,
+   "index": 0,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "上の門（外へ続く門）を調べて外へ出る",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 6,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "外に出たら北へ進んで探索を始める",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 6,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "さらに北へ進んで敵や宝箱を探す",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 6,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "東へ迂回して敵の位置へ向かう",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 6,
+   "index": 4,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "周囲を調べて敵や宝箱、通路を確認する",
+   "outcome": "no_effect",
+   "map": "fieldA"
+  },
+  {
+   "call": 6,
+   "index": 5,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "敵に接近して攻撃を仕掛ける（武器あり）",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 6,
+   "index": 6,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "敵を倒すために再び調べ／攻撃する",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 6,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 1
+   },
+   "reason": "敵を倒したら門や通路を抜けて宝箱へ向かう方向へ移動する",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 6,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "宝箱のある方向へ進む",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 6,
+   "index": 9,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "宝箱を調べて開ける（クリアを目指す）",
+   "outcome": "no_effect",
+   "map": "fieldA"
+  },
+  {
+   "call": 7,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "右へ移動して先の地域の門に向かう",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 7,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ進む（門へ接近）",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 7,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ進む（門へ接近）",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 7,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "上へ移動して門の近くへ",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 7,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "上へ移動して門の隣のマスへ",
+   "outcome": "progress",
+   "map": "fieldA"
+  },
+  {
+   "call": 7,
+   "index": 5,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "隣の『先の地域』への門を調べて移動する",
+   "outcome": "progress",
+   "map": "fieldB"
+  },
+  {
+   "call": 7,
+   "index": 6,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "先の地域に入ったら右へ進んで宝箱を探索",
+   "outcome": "progress",
+   "map": "fieldB"
+  },
+  {
+   "call": 7,
+   "index": 7,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "さらに右へ進んで宝箱を捜索",
+   "outcome": "progress",
+   "map": "fieldB"
+  },
+  {
+   "call": 7,
+   "index": 8,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": -1
+   },
+   "reason": "上へ移動して周囲を確認（宝箱を探す）",
+   "outcome": "progress",
+   "map": "fieldB"
+  },
+  {
+   "call": 7,
+   "index": 9,
+   "action": {
+    "type": "MOVE",
+    "dx": 0,
+    "dy": 1
+   },
+   "reason": "下へ移動して別ルートを確認（宝箱へ向かう）",
+   "outcome": "progress",
+   "map": "fieldB"
+  },
+  {
+   "call": 8,
+   "index": 0,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "東へ（x4,y4）進む — 宝箱へ向かう",
+   "outcome": "progress",
+   "map": "fieldB"
+  },
+  {
+   "call": 8,
+   "index": 1,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "東へ（x5,y4）進む — 宝箱へ向かう",
+   "outcome": "progress",
+   "map": "fieldB"
+  },
+  {
+   "call": 8,
+   "index": 2,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "東へ（x6,y4）進む — 宝箱へ向かう",
+   "outcome": "progress",
+   "map": "fieldB"
+  },
+  {
+   "call": 8,
+   "index": 3,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "東へ（x7,y4）進む — 宝箱へ向かう",
+   "outcome": "progress",
+   "map": "fieldB"
+  },
+  {
+   "call": 8,
+   "index": 4,
+   "action": {
+    "type": "MOVE",
+    "dx": 1,
+    "dy": 0
+   },
+   "reason": "東へ（x8,y4）進む — 宝箱(x9,y4)の隣に到着",
+   "outcome": "progress",
+   "map": "fieldB"
+  },
+  {
+   "call": 8,
+   "index": 5,
+   "action": {
+    "type": "INTERACT"
+   },
+   "reason": "隣の宝箱(x9,y4)を調べて開ける",
+   "outcome": "progress",
+   "map": "fieldB"
+  }
+ ],
+ "errors": []
+}
